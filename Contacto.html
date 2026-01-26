@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contacto</title>
+    <link rel=stylesheet href="css/estilos.css" type="text/css" />
+    <style type="text/css">
+
+    </style>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <meta name="description" content="Página de contacto de mi página web" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="favicon-v2.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="franja"></div>
+
+<header class="franja franja-azul header-logo">
+    <div class="logo-izq">
+        <a href="https://www.educa.jcyl.es/es" target="_blank" rel="noopener noreferrer">
+        <img src="LogoEduca.png" align="top" width="140"></a><br>
+        <b>IES Lucía de Medrano</b>
+    </div>
+
+    <div>
+        <h1 id="arriba">Contacto de Tecnología para alumnos de 2º de bachillerato</h1>
+    </div>
+
+    <div class="logo-der">
+        <a href="https://www.luciademedrano.es/" target="_blank" rel="noopener noreferrer">
+            <img src="LogoIESlucia.png" align="top" width="60"><br>
+            <b>IES Lucía de Medrano</b>
+        </a>
+    </div>
+</header>
+
+<!-- NUEVAS FRANJAS AÑADIDAS -->
+<div class="franja-negra"></div>
+
+<div class="franja-menu">
+    <a class="boton-volver" href="index.html">Volver a la Página Principal</a>
+</div>
+<!-- FIN DE LAS FRANJAS -->
+
+<section id="contenido2">
+
+    <!-- CONTENEDOR DEL FORMULARIO + MAPA -->
+    <div class="contenedor-contacto">
+
+        <!-- FORMULARIO -->
+        <div class="formulario-marco">
+        <form action="index.html" method="get">
+        
+            <fieldset>
+                <legend>Datos personales</legend>
+        
+                Nombre:
+                <input type="text" name="nombre" class="input-text" required>
+                <br>
+        
+                Correo electrónico:
+                <input type="email" name="mail" size="28" required autocomplete placeholder="nombre@servidor.com">
+                <br><br>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Datos de la consulta</legend>
+        
+                Breve descripción de la consulta<br>
+                <textarea name="descripcion" required></textarea>
+        
+                <p>
+                    Motivo de la solicitud de Contacto<br>
+                    <input type="radio" name="proceso" value="Duda" required> Duda
+                    <input type="radio" name="proceso" value="Seguridad"> Seguridad
+                    <input type="radio" name="proceso" value="Solicitud"> Solicitud
+                </p>
+        
+                <p>
+                    Satisfacción (1-10):
+                    <input type="number" name="Satisfacción" value="1" min="1" max="10" required>
+                </p>
+            </fieldset>
+        
+            <button type="submit" class="boton-volver" style="font-size:22px;">
+                Enviar
+            </button>
+        
+        </form>
+
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa-marco">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d940.4322548210629!2d-5.67645053939333!3d40.97141752047984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2ses!4v1768317644203!5m2!1ses!2ses" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+</section>
+
+<div id="franja_final"></div>
+
+<footer>
+    &copy;Avda. Filiberto Villalobos, 97-117 - 37007-Salamanca - tlfno: 923 23 06 25<br>
+</footer>
+
+</body>
+</html>

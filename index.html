@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>DarkHorse 2º Bach</title>
+    <!-- Pagina web de Cristian Colmenar Molina sobre Tecnologia -->
+    <meta name="description"
+        content="Apartado principal de mi página web sobre Tecnología" />
+    <!-- Muestra una descripción de nuestro sitio en los buscadores -->
+    <meta name="robots" content="index, follow" />
+    <!-- Le dice a los robots de los navegadores que rastreen nuestra página y la muestran en las búsquedas -->
+    <link rel="icon" href="favicon-v2.ico" type="image/x-icon">
+    <!-- Aquí va el favicon inicial de mi pagina de Tecnologia de 2º de bachillerato -->
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <!-- Aquí va la estructura de css de mi pagina web -->
+    <script type="text/JavaScript" src="nuevo.js"></script>
+    <!-- CONTADOR DE VISITAS (HTML + JS, SOLO COPIAR Y PEGAR) -->
+    <div id="visit-counter" style="
+        display:inline-block;
+        padding:10px 15px;
+        border-radius:8px;
+        background:#5fbfff;
+        font-family:Arial, sans-serif;
+        font-size:14px;
+        color:#333;
+        box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    ">
+        Visitas: <span id="visit-count">0</span>
+    </div>
+    
+    <script>
+        (function () {
+            // Clave para guardar el contador en este dominio
+            var key = 'contador_visitas_pagina';
+
+            // Leer valor actual
+            var visitas = localStorage.getItem(key);
+
+            // Si no existe, empezamos en 0
+            if (!visitas) {
+                visitas = 0;
+            } else {
+                visitas = parseInt(visitas, 10) || 0;
+            }
+
+            // Sumar una visita
+            visitas++;
+
+            // Guardar de nuevo
+            localStorage.setItem(key, visitas);
+
+            // Mostrar en el widget
+            var span = document.getElementById('visit-count');
+            if (span) {
+                span.textContent = visitas;
+            }
+        })();
+    </script>
+
+
+
+    
+</head>
+
+<body>
+       <header class="franja franja-azul header-logo">
+
+    <div class="logo-izq">
+        <a href="https://www.educa.jcyl.es/es" target="_blank" rel="noopener noreferrer">
+            <img src="LogoEduca.png" align="top" width="140"><br>
+            <b>IES Lucía de Medrano</b>
+        </a>
+    </div>
+
+    <h1 id="arriba">Tecnología para alumnos de 2º de bachillerato</h1>
+
+
+
+    <div class="logo-der">
+        <a href="https://www.luciademedrano.es/" target="_blank" rel="noopener noreferrer">
+            <img src="LogoIESlucia.png" align="top" width="60"><br>
+            <b>IES Lucía de Medrano</b>
+        </a>
+    </div>
+
+</header>
+
+<!-- FRANJA NEGRA ENTRE TÍTULO Y MENÚ -->
+<div class="franja-negra"></div>
+
+
+
+<nav>
+    <ul class="menu-principal">
+
+        <li class="boton-3d">
+            <a href="Teoría.html">
+                <img src="LibroImagenDeTeoria.png" width="60"><br>
+                Teoría Básica
+            </a>
+        </li>
+
+        <li class="boton-3d">
+            <a href="Ejercicios.html">
+                <img src="LibroImagenDeEjercicios.png" width="80"><br>
+                Ejercicios
+            </a>
+        </li>
+
+        <li class="boton-3d">
+            <a href="Pruebas.html">
+                <img src="HojaDePapelExamenImagen.png" width="60"><br>
+                Pruebas/Exámenes
+            </a>
+        </li>
+
+        <!-- NUEVO BOTÓN DE CONTACTO ARRIBA A LA DERECHA -->
+        <li class="boton-contacto-3d">
+            <a href="Contacto.html">
+                <img src="ContactoImagen.png" width="60"><br>
+                Contacto
+            </a>
+        </li>
+
+    </ul>
+</nav>
+    <section>
+        <div>
+            <div id="video1">
+                <iframe width="1150" height="600" src="https://www.youtube.com/embed/aJwMEQqwDSo"
+                title="15 Innovaciones Tecnológicas del 2025 que Cambiarán el Futuro" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <footer>
+            <h5>&copy; Avda. Filiberto Villalobos, 97-117 - 37007-Salamanca - tlfno: 923 23 06 25<br></h5>
+            
+        </footer>
+</body>
+
+</html>
